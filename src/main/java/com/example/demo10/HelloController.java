@@ -34,7 +34,7 @@ public class HelloController
                 String p=pass.pass;
                 password.setText(p);
                 label.setText(null);
-                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "Asma@2004");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/new_schema", "root", "Gayu@2003");
                 ps = connection.prepareStatement("INSERT INTO users (username,password) VALUES (?,?)");
                 ps.setString(1, name.getText());
                 ps.setString(2, p);
